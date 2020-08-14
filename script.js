@@ -49,7 +49,7 @@ function calcular() {
   var qdtTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2 * criancas);
 
   //coloca-se o "+" após o sinal de "=" para deixar entendido que preciso imprimir mais de um innerHTML
-  resultado.innerHTML = `<h1 class="algumacoisa">Você vai precisar de:</h1>`
+  resultado.innerHTML = `<h1 class="result-info">Você vai precisar de:</h1>`
   resultado.innerHTML += `<p>${qdtTotalCarne/1000} Kg de Carne</p>`
   resultado.innerHTML += `<p>${Math.ceil(qdtTotalCerveja/355)} latas de Cerveja</p>`
   resultado.innerHTML += `<p>${Math.ceil(qdtTotalBebidas/2000)} garrafas de Bebidas</p>`
