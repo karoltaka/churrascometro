@@ -1,16 +1,98 @@
-.container {
-  font-family: Arial, Helvetica, sans-serif;
-  max-width: 300px;
-  margin: auto;
-  background-color: aliceblue;
-  padding: 20px;
-  border-radius: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-input {
-  width: 100%;
-  display: block;
-  padding: 5px;
+.container {
+  max-width: 100%;
+  max-height: 100vh;
+
+  background: #f3f8ff;
+}
+
+.text-content {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.text-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+}
+
+.text-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.box-calculo {
+  height: 100vh;
+  background: #ffe162;
+  border-radius: 80px 0px 0px 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.box-calculo img {
+  width: 50%;
+  margin-top: 30px;
+}
+
+.form {
+  margin-top: 50px;
+}
+
+.form .input-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.box-calculo label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.box-calculo input {
+  width: 345px;
+  height: 56px;
+  background: #fafafc;
+
+  border: 1px solid #e6e6f0;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  border-radius: 8px;
+
+  font-size: 20px;
+  text-align: center;
+}
+
+.box-calculo button {
+  width: 345px;
+  height: 56px;
+  background: #fafafc;
+
+  border: 1px solid #e6e6f0;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.box-calculo input::placeholder {
+  font-size: 1rem;
+  color: #9c98a6;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }

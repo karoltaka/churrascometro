@@ -8,24 +8,54 @@
   </head>
   <body>
     <div class="container">
-      <h1>Churrascômetro</h1>
+      <div class="grid">
+        <!-- area do texto de imagem -->
+        <div class="text-content">
+          <h1>
+            Saiba quanta comida e
+            <p>bebida vai precisar!</p>
+          </h1>
+          <img src="./assets/img.svg" alt="" />
+        </div>
+        <!-- area de calculo -->
+        <div class="box-calculo">
+          <img src="./assets/churraslogo.png" alt="" />
+          <div class="form">
+            <div class="input-block">
+              <label for="adultos">Quantidade de adultos</label>
+              <input
+                type="number"
+                name="adultos"
+                id="adultos"
+                placeholder="Adultos"
+              />
+            </div>
+            <div class="input-block">
+              <label for="criancas">Quantidade de crianças</label>
+              <input
+                type="number"
+                name="criancas"
+                id="criancas"
+                placeholder="Crianças"
+              />
+            </div>
+            <div class="input-block">
+              <label for="duracao">Duração do churrasco</label>
+              <input
+                type="number"
+                name="duracao"
+                id="duracao"
+                placeholder="Duração (h)"
+              />
+            </div>
+            <div class="input-block">
+              <button onclick="calcular()">Calcular</button>
+            </div>
+          </div>
 
-      <input type="number" name="adultos" id="adultos" placeholder="Adultos" />
-      <input
-        type="number"
-        name="criancas"
-        id="criancas"
-        placeholder="Crianças"
-      />
-      <input
-        type="number"
-        name="duracao"
-        id="duracao"
-        placeholder="Duração (h)"
-      />
-      <button onclick="calcular()">Calcular</button>
-
-      <div id="resultado"></div>
+          <div id="resultado"></div>
+        </div>
+      </div>
     </div>
 
     <script src="./script.js"></script>
