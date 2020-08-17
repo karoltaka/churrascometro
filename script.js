@@ -50,8 +50,22 @@ function calcular() {
 
   //coloca-se o "+" após o sinal de "=" para deixar entendido que preciso imprimir mais de um innerHTML
   resultado.innerHTML = `<h1 class="result-info">Você vai precisar de:</h1>`
-  resultado.innerHTML += `<p>${qdtTotalCarne/1000} Kg de Carne</p>`
-  resultado.innerHTML += `<p>${Math.ceil(qdtTotalCerveja/355)} latas de Cerveja</p>`
-  resultado.innerHTML += `<p>${Math.ceil(qdtTotalBebidas/2000)} garrafas de Bebidas</p>`
-
+  resultado.innerHTML += `
+    <div class="result-block">
+      <img src="./assets/carne.svg"/>
+      <p>${qdtTotalCarne/1000} Kg de Carne</p>
+    </div>
+  `
+  resultado.innerHTML += `
+    <div class="result-block">
+      <img src="./assets/cerveja.svg"/>
+      <p>${Math.ceil(qdtTotalCerveja/355)} latas de Cerveja</p>
+    </div>
+  `
+  resultado.innerHTML += `
+    <div class="result-block">
+      <img src="./assets/refri.svg"/>
+      <p>${Math.ceil(qdtTotalBebidas/2000)} garrafas de Bebidas</p>
+    </div>
+  `
 }

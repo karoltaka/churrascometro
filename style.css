@@ -98,7 +98,7 @@
   grid-template-columns: 2fr 1fr;
 }
 
-/* css do resultado em js */
+/* css do resultado no js */
 .result-info {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
@@ -108,10 +108,22 @@
   margin-top: 30px;
 }
 
-.box-calculo #resultado p {
+.result-block {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.result-block img {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.result-block p {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   text-align: center;
   color: #000;
-  margin: 19px 0 0 8px;
 }
