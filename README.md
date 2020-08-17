@@ -15,7 +15,7 @@
 </p>
 
 <div align="center">
-   Projeto feito no curso do ProgBR
+   Projeto desenvolvido no curso do ProgBR
 </div>
 
 <p align="center">
@@ -40,7 +40,7 @@ Cerveja - 1200ml por Pessoa + 6 horas - 2000ml
 </br>
 Refrigerante/água - 1000ml por pessoa + 6 horas 1500ml
 </br>
-Crianças valem por 0,5
+Crianças valem por 0,5.
 
 ## :computer: Tecnologias utilizadas
 
