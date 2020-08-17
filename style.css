@@ -91,6 +91,13 @@
   font-size: 20px;
   text-align: center;
   margin-top: 10px;
+
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.box-calculo button:hover {
+  background: #bd9d12;
 }
 
 .grid {
