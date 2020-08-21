@@ -4,11 +4,11 @@
 
 // Crianças valem por 0,5
 
-var inputAdultos = document.getElementById("adultos");
-var inputCriancas = document.getElementById("criancas");
-var inputDuracao = document.getElementById("duracao");
+const inputAdultos = document.getElementById("adultos");
+const inputCriancas = document.getElementById("criancas");
+const inputDuracao = document.getElementById("duracao");
 
-var resultado = document.getElementById("resultado")
+const resultado = document.getElementById("resultado")
 
 function carnePP(duracao) {
   
@@ -40,16 +40,16 @@ function bebidasPP(duracao) {
 function calcular() {
   console.log("Calculando...")
 
-  var adultos = inputAdultos.value;
-  var criancas = inputCriancas.value;
-  var duracao = inputDuracao.value;
+  const adultos = inputAdultos.value;
+  const criancas = inputCriancas.value;
+  const duracao = inputDuracao.value;
 
-  var qdtTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) / 2 * criancas);
-  var qdtTotalCerveja = cervejaPP(duracao) * adultos;
-  var qdtTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2 * criancas);
+  const qdtTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) / 2 * criancas);
+  const qdtTotalCerveja = cervejaPP(duracao) * adultos;
+  const qdtTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2 * criancas);
 
   //coloca-se o "+" após o sinal de "=" para deixar entendido que preciso imprimir mais de um innerHTML
-  resultado.innerHTML = `<h1 class="result-info">Você vai precisar de:</h1>`
+  resultado.innerHTML = `<h2 class="result-info">Você vai precisar de:</h2>`
   resultado.innerHTML += `
     <div class="result-block">
       <img src="./assets/carne.svg"/>
@@ -67,5 +67,10 @@ function calcular() {
       <img src="./assets/refri.svg"/>
       <p>${Math.ceil(qdtTotalBebidas/2000)} garrafas de Bebidas</p>
     </div>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
   `
 }
