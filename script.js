@@ -38,8 +38,6 @@ function bebidasPP(duracao) {
 }
 
 function calcular() {
-  console.log("Calculando...")
-
   const adultos = inputAdultos.value;
   const criancas = inputCriancas.value;
   const duracao = inputDuracao.value;
